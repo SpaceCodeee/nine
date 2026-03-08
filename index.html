@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jai Sood | Space & Technology</title>
+<title>Jai Sood | Portfolio</title>
 
 <style>
 
@@ -11,35 +12,17 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
 scroll-behavior:smooth;
 }
 
 body{
-background:#020617;
+background: linear-gradient(120deg,#0f172a,#020617);
 color:white;
 overflow-x:hidden;
 }
 
-/* -------- STAR BACKGROUND -------- */
-
-body::before{
-content:"";
-position:fixed;
-width:100%;
-height:100%;
-background-image:
-radial-gradient(2px 2px at 20% 30%, white, transparent),
-radial-gradient(2px 2px at 70% 40%, white, transparent),
-radial-gradient(1px 1px at 40% 70%, white, transparent),
-radial-gradient(1px 1px at 90% 60%, white, transparent),
-radial-gradient(2px 2px at 10% 80%, white, transparent);
-background-size:cover;
-opacity:0.3;
-z-index:-1;
-}
-
-/* -------- NAVBAR -------- */
+/* NAVBAR */
 
 nav{
 position:fixed;
@@ -49,23 +32,24 @@ display:flex;
 justify-content:center;
 gap:40px;
 padding:18px;
-background:rgba(2,6,23,0.8);
-backdrop-filter:blur(10px);
-z-index:100;
+background:rgba(2,6,23,0.7);
+backdrop-filter:blur(12px);
+z-index:1000;
 }
 
 nav a{
-color:#94a3b8;
 text-decoration:none;
+color:#94a3b8;
 font-size:14px;
 letter-spacing:1px;
+transition:0.3s;
 }
 
 nav a:hover{
 color:#38bdf8;
 }
 
-/* -------- HERO -------- */
+/* HERO */
 
 .hero{
 height:100vh;
@@ -77,7 +61,7 @@ padding:20px;
 }
 
 .hero h1{
-font-size:48px;
+font-size:52px;
 margin-bottom:10px;
 }
 
@@ -86,13 +70,13 @@ color:#38bdf8;
 }
 
 .hero p{
-color:#94a3b8;
+color:#cbd5f5;
 max-width:600px;
 margin:auto;
-margin-top:10px;
+line-height:1.6;
 }
 
-/* -------- SECTIONS -------- */
+/* SECTIONS */
 
 section{
 max-width:1100px;
@@ -102,40 +86,35 @@ padding:100px 20px;
 
 h2{
 font-size:30px;
-margin-bottom:25px;
+margin-bottom:30px;
 color:#38bdf8;
 }
 
-/* -------- ABOUT -------- */
+/* GLASS CARDS */
 
-.about p{
-color:#cbd5f5;
-line-height:1.7;
-}
-
-/* -------- SKILLS -------- */
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:15px;
-}
-
-.skill{
-background:#0f172a;
-padding:15px;
-border-radius:10px;
-text-align:center;
+.card{
+background:rgba(255,255,255,0.04);
 border:1px solid rgba(255,255,255,0.08);
+padding:25px;
+border-radius:14px;
+backdrop-filter:blur(10px);
 transition:0.3s;
 }
 
-.skill:hover{
-transform:translateY(-5px);
+.card:hover{
+transform:translateY(-6px);
 border-color:#38bdf8;
 }
 
-/* -------- PROJECTS -------- */
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:20px;
+}
+
+/* PROJECTS */
 
 .projects{
 display:grid;
@@ -143,18 +122,7 @@ grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:20px;
 }
 
-.project{
-background:#0f172a;
-padding:25px;
-border-radius:12px;
-border:1px solid rgba(255,255,255,0.05);
-}
-
-.project h3{
-margin-bottom:10px;
-}
-
-/* -------- CONTACT -------- */
+/* CONTACT */
 
 .contact{
 text-align:center;
@@ -163,8 +131,8 @@ text-align:center;
 .contact a{
 display:inline-block;
 margin:10px;
-padding:12px 22px;
-border-radius:25px;
+padding:12px 24px;
+border-radius:30px;
 background:#0f172a;
 color:#38bdf8;
 text-decoration:none;
@@ -177,16 +145,15 @@ background:#38bdf8;
 color:#020617;
 }
 
-/* -------- FOOTER -------- */
+/* FOOTER */
 
 footer{
 text-align:center;
 padding:40px;
 color:#64748b;
-font-size:14px;
 }
 
-/* -------- MOBILE -------- */
+/* MOBILE */
 
 @media(max-width:700px){
 
@@ -205,16 +172,12 @@ gap:20px;
 
 <body>
 
-<!-- NAVBAR -->
-
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
 </nav>
-
-<!-- HERO -->
 
 <div class="hero">
 
@@ -224,41 +187,30 @@ gap:20px;
 
 <p>
 Student exploring space technology, robotics and programming.
-Currently learning data tools and coding as first steps toward
-contributing to future space exploration technologies.
+Currently building technical foundations to work in the
+future space industry.
 </p>
 
 </div>
 
 </div>
-
-<!-- ABOUT -->
 
 <section id="about">
 
-<h2>About Me</h2>
+<h2>About</h2>
 
-<div class="about">
-
-<p>
-I am passionate about space exploration and emerging technologies.
-My goal is to work in the space industry and contribute to future
-missions, robotics systems, and exploration technologies.
-</p>
-
-<br>
+<div class="card">
 
 <p>
-Right now I am focusing on learning programming, data tools,
-and building technical skills that will help me grow in the
-space and technology sector.
+I am passionate about space exploration and emerging technology.
+My goal is to contribute to future space missions and technology
+development. Currently I am learning programming and data tools
+as the first step toward entering the space industry.
 </p>
 
 </div>
 
 </section>
-
-<!-- SKILLS -->
 
 <section id="skills">
 
@@ -266,17 +218,16 @@ space and technology sector.
 
 <div class="skills">
 
-<div class="skill">Python (Learning)</div>
-<div class="skill">Technology Research</div>
-<div class="skill">Space Exploration</div>
-<div class="skill">Robotics Interest</div>
-<div class="skill">Problem Solving</div>
+<div class="card">Python (Learning)</div>
+<div class="card">Data Tools</div>
+<div class="card">Technology Research</div>
+<div class="card">Space Exploration</div>
+<div class="card">Robotics Interest</div>
+<div class="card">Problem Solving</div>
 
 </div>
 
 </section>
-
-<!-- PROJECTS -->
 
 <section id="projects">
 
@@ -284,28 +235,32 @@ space and technology sector.
 
 <div class="projects">
 
-<div class="project">
+<div class="card">
+
 <h3>Portfolio Website</h3>
+
 <p>
-My first personal portfolio website hosted using GitHub Pages.
-This site documents my learning journey in technology and space.
+My personal portfolio website hosted using GitHub Pages.
+This website documents my learning journey in technology.
 </p>
+
 </div>
 
-<div class="project">
+<div class="card">
+
 <h3>Upcoming Projects</h3>
+
 <p>
-I am currently learning programming and data tools.
-Projects related to data analysis, space datasets, and
-technology experiments will appear here soon.
+Currently learning programming and data tools.
+Projects related to space datasets and technology
+will appear here soon.
 </p>
+
 </div>
 
 </div>
 
 </section>
-
-<!-- CONTACT -->
 
 <section id="contact">
 
@@ -313,9 +268,9 @@ technology experiments will appear here soon.
 
 <div class="contact">
 
-<a href="jaisood025@gmail.com">Email</a>
+<a href="mailto:youremail@example.com">Email</a>
 
-<a href="https://github.com/SpaceCodeee" target="_blank">GitHub</a>
+<a href="https://github.com/SpaceCodeee">GitHub</a>
 
 <a href="#">LinkedIn (Coming Soon)</a>
 
@@ -326,7 +281,7 @@ technology experiments will appear here soon.
 <footer>
 
 © 2026 Jai Sood  
-Exploring Space & Technology 🚀
+Future Space Technologist 🚀
 
 </footer>
 
