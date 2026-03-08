@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jai Sood | Portfolio</title>
+
+<style>
+
+/* ---------- GLOBAL STYLE ---------- */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#e2e8f0;
+line-height:1.6;
+}
+
+/* ---------- NAVBAR ---------- */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(15,23,42,0.9);
+backdrop-filter: blur(10px);
+display:flex;
+justify-content:center;
+gap:40px;
+padding:15px;
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+nav a{
+color:#cbd5f5;
+text-decoration:none;
+font-size:14px;
+letter-spacing:1px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:120px 20px 60px;
+background:
+radial-gradient(circle at 20% 20%, #1e293b 0%, transparent 40%),
+radial-gradient(circle at 80% 30%, #1e293b 0%, transparent 40%);
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.profile-pic{
+width:140px;
+height:140px;
+border-radius:50%;
+background:#1e293b;
+margin:0 auto 25px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:12px;
+color:#94a3b8;
+border:2px dashed #334155;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+letter-spacing:1px;
+}
+
+.hero p{
+color:#94a3b8;
+font-size:16px;
+max-width:600px;
+margin:auto;
+}
+
+/* ---------- SECTION STYLE ---------- */
+
+section{
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.section-title{
+font-size:28px;
+margin-bottom:30px;
+color:#38bdf8;
+letter-spacing:1px;
+}
+
+/* ---------- ABOUT ---------- */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.about p{
+color:#cbd5f5;
+}
+
+/* ---------- SKILLS ---------- */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+}
+
+.skill{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+text-align:center;
+border:1px solid rgba(255,255,255,0.05);
+transition:0.3s;
+}
+
+.skill:hover{
+transform:translateY(-4px);
+border-color:#38bdf8;
+}
+
+/* ---------- EXPERIENCE ---------- */
+
+.timeline{
+border-left:2px solid #1e293b;
+padding-left:25px;
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.exp{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.exp h4{
+margin-bottom:6px;
+color:#38bdf8;
+}
+
+.exp span{
+font-size:13px;
+color:#94a3b8;
+}
+
+/* ---------- PROJECTS ---------- */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.05);
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-5px);
+border-color:#38bdf8;
+}
+
+.project a{
+display:inline-block;
+margin-top:10px;
+font-size:14px;
+color:#38bdf8;
+text-decoration:none;
+}
+
+/* ---------- CONTACT ---------- */
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+display:inline-block;
+margin:8px;
+padding:10px 18px;
+border-radius:30px;
+background:#1e293b;
+color:#38bdf8;
+text-decoration:none;
+font-size:14px;
+transition:0.3s;
+}
+
+.contact a:hover{
+background:#38bdf8;
+color:#0f172a;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+text-align:center;
+padding:30px;
+font-size:13px;
+color:#64748b;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:800px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+nav{
+gap:18px;
+font-size:12px;
+}
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="profile-pic">
+Photo Placeholder
+</div>
+
+<h1>Jai Sood</h1>
+
+<p>
+Student at UTS passionate about space exploration, robotics, and emerging technologies.
+Currently learning programming and data tools as a first step toward contributing to the future
+of space technology and working with global space organizations.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">About</h2>
+
+<div class="about">
+
+<p>
+I am a technology enthusiast driven by curiosity about space, robotics, and the future of human
+exploration beyond Earth. My journey currently focuses on building technical foundations in
+programming, data tools, and problem solving.
+</p>
+
+<p>
+My long-term goal is to contribute to space technology and exploration systems. I enjoy learning
+about space missions, emerging robotics technology, and the science that powers modern exploration.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">Data Analysis</div>
+<div class="skill">Programming Basics</div>
+<div class="skill">Problem Solving</div>
+<div class="skill">Robotics Interest</div>
+<div class="skill">Space Technology</div>
+
+</div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="timeline">
+
+<div class="exp">
+<h4>Computer Science Student</h4>
+<span>University of Technology Sydney</span>
+<p>
+Learning programming fundamentals, data tools, and developing the technical
+skills required for future work in space technology.
+</p>
+</div>
+
+<div class="exp">
+<h4>Independent Technology Learner</h4>
+<span>Self Directed</span>
+<p>
+Exploring robotics, programming, and emerging technologies related to space
+exploration and artificial intelligence.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h4>Space Data Exploration</h4>
+<p>
+Exploring publicly available space datasets and building simple analysis tools
+to understand mission data and satellite information.
+</p>
+<a href="#">Project Link</a>
+</div>
+
+<div class="project">
+<h4>Robotics Learning Experiments</h4>
+<p>
+Personal experiments focused on understanding robotics concepts and automation
+systems related to space technology.
+</p>
+<a href="#">Project Link</a>
+</div>
+
+<div class="project">
+<h4>Portfolio Website</h4>
+<p>
+A personal portfolio to document learning, projects, and progress toward a
+career in the space industry.
+</p>
+<a href="#">Project Link</a>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<a href="#">Email</a>
+<a href="#">LinkedIn</a>
+<a href="#">GitHub</a>
+<a href="#">Twitter</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+© 2026 Jai Sood — Portfolio
+</footer>
+
+
+</body>
+</html>
